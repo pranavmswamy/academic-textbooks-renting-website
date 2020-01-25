@@ -1,0 +1,173 @@
+<html lang ="en">
+<link href="https://fonts.googleapis.com/css?family=Lora|Spectral+SC:500" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<head>
+<title>rentAbook!</title>
+</head>    
+<body>
+    <style>
+        #grid {
+            background-color: darkkhaki; 
+        }
+        #subheading {
+            font-family: 'Spectral SC', serif;
+            margin-bottom: 10px;
+        }
+        .subtext {
+            font-family: 'Lora',sans-serif;
+        }
+        p {
+            font-size: 15px;
+        }
+        body {
+            background-image:url();
+            background-color:#CACD84;
+            font-family: 'Lora',sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:#8C8F51;
+             font-size: 16px;
+            }
+
+        li {
+            float: left;
+            }
+
+        li a {
+                display: block;
+                color:black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                width: 496px;
+            }
+        li a:hover {
+                    background-color:#616339;
+                    }
+        .active {
+            background-color: #616339;
+        }
+        .subcol {
+            background-color:#E5E8A3;
+        }
+        .btncolor {
+            background-color: #8C8F51;
+            font-weight: bold;
+        }
+    </style> 
+    <div class="container-fluid">
+        <div class="text-center">
+        <img src="http://newhorizonindia.edu/nhengineering/wp-content/uploads/2017/06/nhce-2017-june20.png" alt="College banner" id="college_banner">
+            <h1 id="heading" class="text-center"><em id="subheading">rentAbook!</em></h1> 
+        </div>
+        <!--nAVIGATION bAR ------------------------------------------------------------->
+        <ul>
+            <li><a class = "active" href="http://localhost:80/mainpage.html"><b>RENT A BOOK</b></a></li>
+            <li><a href="http://localhost:80/addnewbook.php"><b>ADD A BOOK</b></a></li>
+            <li><a href="http://localhost:80/registernewstudent.php"><b>REGISTER</b></a></li>
+        </ul>
+        <!-------------------------------------------------------------------------------->
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 well-sm">
+                <div class="row well subcol" id="cs">
+                    <div class="col-md-5" id ="csepic">
+                        <img src="http://manavrachna.edu.in/wp-content/uploads/2016/12/Computer-sc-2.jpg" alt="csepic" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 subtext" id = "cseinfo">
+                        <h3 id="subheading">COMPUTER SCIENCE</h3>
+                        <p> Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers. It is the scientific and practical approach to computation and its applications and the systematic study of the feasibility, structure, expression, and mechanization of the methodical procedures (or algorithms) that underlie the acquisition, representation, processing, storage, communication of, and access to information. </p><p>Computer science engineering (CSE) is one of the popular courses among engineering aspirants which focuses on the basic elements of computer programming and networking. Students pursuing computer science courses will gain knowledge of design, implementation and management of information system of both hardware and software. Going by the name, CSE course deals primarily with the theory of computation and design of computational systems. The course is offered across the globe in technical institutions at undergraduate as well as postgraduate levels awarding B.Tech and M.tech degrees, respectively.</p>
+                        <form action="http://localhost/showbooks.php" method="post">
+                            <button class="btn btn-block btncolor" value="CSE" name="subject">VIEW BOOKS</button>
+                        </form>
+                    </div>
+                </div>
+                 <div class="row well subcol" id="bt">
+                    <div class="col-md-5" id ="btpic">
+                        <img src = "https://images8.content-hci.com/commimg/myhotcourses/blog/post/myhc_47110.jpg" alt ="bt pic" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 subtext" id = "ecinfo">
+                        <h3 id="subheading">BIOTECHNOLOGY</h3>
+                        <p>Biotechnology is a set of powerful tools that employ living organisms (or parts of organisms) to make or modify products, improve plants or animals, or develop microorganisms for specific uses. Biotechnology is a research oriented science, a combination of Biology and Technology. It covers a wide variety of subjects like Genetics, Biochemistry, Microbiology, Immunology, Virology, Chemistry and Engineering.</p>
+                        <p>It also has tight links and relationships with many other subjects like Health and Medicine, Agriculture and Animal Husbandry, Cropping system and Crop Management, Ecology, Cell Biology, Soil Science and Soil Conservation, Bio-statistics, Plant Physiology, Seed Technology and the like. Biotechnology is the use of living things, especially cells and bacteria in industrial process. With demand for biotechnologists growing prospects in this industry are increasing.</p>
+                        <form action="http://localhost/showbooks.php" method="post">
+                        <button class="btn btn-block btncolor" value="BT" name="subject">VIEW BOOKS</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row well subcol" id="ec">
+                    <div class="col-md-5" id ="ecpic">
+                        <img src = "https://static4.arrow.com/-/media/images/research-and-events/articles/1015/1015-bringing-the-best-of-microcontroller-innovations-main.jpg" alt ="ec pic" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 subtext" id = "ecinfo">
+                        <h3 id="subheading">ELECTRONICS AND COMMUNICATION</h3>
+                        <p>Electronics Engineering is a branch of electrical engineering. The discipline studies the use of electromagnetic spectrum in a broad way and is related to the application of electronic devices like integrated circuits, transistors etc. It also deals with the design and application of circuitry and equipment for power generation and distribution, machine control, and communications. Students learn to design electronic circuits, computer systems and also develop control systems.</p> 
+                        <p>BE/B.Tech in Electronics Engineering is a four-year program. The sub-disciplines of Electronics Engineering include power, control, electronics, microelectronics and Signal Processing, Telecommunications, Instrumentation, and Computers. One can pursue M.Tech in Electronics Engineering after successful completion of BE/B.Tech.</p>
+                        <form action="http://localhost/showbooks.php" method="post">
+                        <button class="btn btn-block btncolor" value="EC" name="subject">VIEW BOOKS</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row well subcol" id="ds">
+                    <div class="col-md-5" id ="dspic">
+                        <img src="https://www.mytechlogy.com/upload/by_users/VedRaj/271607011737Bigdata.jpg" alt="data science picture" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 subtext" id = "dsinfo">
+                        <h3 id="subheading">DATA SCIENCE</h3>
+                        <p>Data science, also known as data-driven science, is an interdisciplinary field about scientific methods, processes, and systems to extract knowledge or insights from data in various forms, either structured or unstructured,similar to data mining.</p>
+                        <p>Data science is a "concept to unify statistics, data analysis and their related methods" in order to "understand and analyze actual phenomena" with data. It employs techniques and theories drawn from many fields within the broad areas of mathematics, statistics, information science, and computer science, in particular from the subdomains of machine learning, classification, cluster analysis, data mining, databases, and visualization.</p>
+                        <form action="http://localhost/showbooks.php" method="post">
+                        <button class="btn btn-block btncolor" value="DS" name="subject">VIEW BOOKS</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row well subcol" id="cv">
+                    <div class="col-md-5" id ="cvpic">
+                        <img src = "http://engineering.uottawa.ca/civil/sites/engineering.uottawa.ca.civil/files/civil_urop.jpg" alt ="cv pic" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 subtext" id = "cvinfo">
+                        <h3 id="subheading">CIVIL ENGINEERING</h3>
+                        <p>There would have been no historic wonders like Taj Mahal, Coliseum of Rome and the Great Wall of China or modern masterpieces like the London Bridge and Howrah Bridge if there were no civil engineers. The engineering course deals with planning, designing, constructing, maintaining, and operating infrastructures while protecting the public and environmental health as well as improving existing infrastructure. The course also teaches the development of better infrastructural facilities to sustain an eco-friendly environment. Civil engineering course is offered both at the undergraduate and postgraduate levels.</p>
+                        <form action="http://localhost/showbooks.php" method="post">
+                        <button class="btn btn-block btncolor" value="CV" name="subject">VIEW BOOKS</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row well subcol" id="au">
+                    <div class="col-md-5" id ="aupic">
+                        <img src = "https://www.coursesafter10th.com/wp-content/uploads/2016/04/automobile-engineering.jpg" alt ="au pic" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 subtext" id = "auinfo">
+                        <h3 id="subheading">AUTOMOBILE ENGINEERING</h3>
+                        <p>Automobile Engineering or Automotive Engineering is a part of Mechanical Engineering. Through the application of automotive technology, the course offers specialisation in vehicle designing, repairing, testing and assembling. In this programme, one can also learn safety engineering, quality management and control, automotive analytics as well as assembling and installation of various automobiles. BE/B.Tech in Automobile Engineering is a 4-year programme.</p>
+                        <p>This programme also involves the study of courses related to aerospace and marine engineering. It enables the students to explore new areas, create new avenues in the fields of research and development of technologies in the field of automobile engineering. One can pursue M.Tech in Automobile Engineering after successful completion of BE/B.Tech.</p>
+                        <form action="http://localhost/showbooks.php" method="post">
+                        <button class="btn btn-block btncolor" value="AU" name="subject">VIEW BOOKS</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row well subcol" id="me">
+                    <div class="col-md-5" id ="mepic">
+                        <img src = "https://continuinged.uml.edu/images/2015/programs/online-mechanical-engineering-technology-bachelor-image.jpg" alt ="me pic" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 subtext" id = "meinfo">
+                        <h3 id="subheading">MECHANICAL ENGINEERING</h3>
+                        <p>Mechanical engineering is a professional programme which helps students to understand the working mechanisms of heavy tools and machineries.  The branch applies principles of engineering, physics and material science for the design, analysis, manufacturing and maintenance of mechanical systems. The course covers technical areas like distribution of electricity through generators, transformers, transmission lines, lighting and wiring in buildings.</p>
+                        <p>A course in mechanical engineering makes a student gain knowledge and experience in the designing of electric motors, automobiles, aircrafts and other heavy vehicles. Mechanical engineering demands knowledge about software used in technical work like computer-aided design and mathematical modelling.</p>
+
+                        <form action="http://localhost/showbooks.php" method="post">
+                        <button class="btn btn-block btncolor" value="ME" name="subject">VIEW BOOKS</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</body>
+</html>
